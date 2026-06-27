@@ -1,0 +1,334 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+   ROOT
+========================= */
+:root{
+    --pink:#e84393;
+    --dark:#333;
+    --white:#fff;
+    --light:#f9f9f9;
+    --shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    text-decoration:none;
+    transition:.2s linear;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior:smooth;
+    overflow-x:hidden;
+}
+
+body{
+    background:var(--light);
+    color:var(--dark);
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:2rem 9%;
+
+    background:var(--white);
+    box-shadow:var(--shadow);
+    z-index:1000;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+.back-btn{
+    color:var(--pink);
+    font-size:1.6rem;
+    font-weight:500;
+}
+
+.back-btn:hover{
+    color:var(--dark);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.cart-container{
+    width:100%;
+    min-height:100vh;
+    padding:14rem 9% 5rem;
+}
+
+/* =========================
+   CART INFO
+========================= */
+.cart-info{
+    margin-bottom:2rem;
+}
+
+.cart-info h2{
+    font-size:2rem;
+}
+
+/* =========================
+   TABLE
+========================= */
+.cart-table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--white);
+    border-radius:1rem;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.cart-table thead{
+    background:var(--pink);
+    color:var(--white);
+}
+
+.cart-table th{
+    padding:1.8rem;
+    font-size:1.6rem;
+    text-align:center;
+}
+
+.cart-table td{
+    padding:1.8rem;
+    font-size:1.5rem;
+    text-align:center;
+    border-bottom:.1rem solid #eee;
+}
+
+.cart-table tbody tr:hover{
+    background:#fff5fa;
+}
+
+.product-name{
+    font-weight:500;
+}
+
+/* =========================
+   QUANTITY
+========================= */
+.qty-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1.5rem;
+}
+
+.qty-box a{
+    width:3rem;
+    height:3rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:var(--pink);
+    color:var(--white);
+
+    border-radius:50%;
+    font-size:1.8rem;
+    font-weight:600;
+}
+
+.qty-box a:hover{
+    background:var(--dark);
+}
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+.remove-btn{
+    display:inline-block;
+
+    padding:.8rem 1.5rem;
+
+    background:crimson;
+    color:var(--white);
+
+    border-radius:.5rem;
+}
+
+.remove-btn:hover{
+    background:var(--dark);
+}
+
+/* =========================
+   TOTAL
+========================= */
+.total-row td{
+    background:#fafafa;
+    font-weight:600;
+}
+
+.total-price{
+    color:var(--pink);
+    font-size:1.8rem;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.cart-actions{
+    margin-top:3rem;
+    text-align:center;
+}
+
+.checkout-btn{
+    display:inline-block;
+
+    background:var(--pink);
+    color:var(--white);
+
+    padding:1.2rem 3rem;
+    border-radius:5rem;
+
+    font-size:1.7rem;
+    font-weight:500;
+
+    box-shadow:var(--shadow);
+}
+
+.checkout-btn:hover{
+    background:var(--dark);
+    transform:translateY(-3px);
+}
+
+.clear-btn{
+    margin-left:1.5rem;
+    color:#6c2eb9;
+    font-size:1.6rem;
+}
+
+.clear-btn:hover{
+    color:var(--dark);
+}
+
+/* =========================
+   EMPTY CART
+========================= */
+.empty-cart{
+    background:var(--white);
+    padding:4rem;
+
+    text-align:center;
+
+    border-radius:1rem;
+    box-shadow:var(--shadow);
+}
+
+.empty-cart i{
+    font-size:5rem;
+    color:var(--pink);
+    margin-bottom:1rem;
+}
+
+.empty-cart h2{
+    font-size:3rem;
+    margin-bottom:1rem;
+}
+
+.empty-cart p{
+    font-size:1.6rem;
+    color:#666;
+    margin-bottom:2rem;
+}
+
+.shop-btn{
+    display:inline-block;
+
+    background:var(--pink);
+    color:var(--white);
+
+    padding:1rem 2.5rem;
+    border-radius:5rem;
+
+    font-size:1.6rem;
+}
+
+.shop-btn:hover{
+    background:var(--dark);
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+::-webkit-scrollbar{
+    width:.8rem;
+}
+
+::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--pink);
+    border-radius:5rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    .cart-container{
+        padding:14rem 2rem 4rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .cart-table{
+        display:block;
+        overflow-x:auto;
+    }
+
+    .checkout-btn{
+        width:100%;
+        text-align:center;
+    }
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+
+    .cart-table th,
+    .cart-table td{
+        padding:1rem;
+    }
+}

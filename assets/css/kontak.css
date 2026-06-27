@@ -1,0 +1,261 @@
+/* =========================
+   CONTACT SECTION
+========================= */
+
+:root{
+    --pink: #e84393;
+    --dark: #333;
+    --white: #fff;
+    --light: #f9f9f9;
+    --border: #ddd;
+    --shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    padding: 8rem 9%;
+    background: var(--light);
+}
+
+.contact .heading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--dark);
+    margin-bottom: 4rem;
+}
+
+.contact .heading span{
+    color: var(--pink);
+}
+
+/* =========================
+   ROW
+========================= */
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.contact form{
+    flex: 1 1 45rem;
+
+    background: var(--white);
+
+    padding: 3rem;
+    border-radius: 1.5rem;
+
+    box-shadow: var(--shadow);
+}
+
+.contact form h3{
+    font-size: 2.8rem;
+    color: var(--dark);
+
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* =========================
+   INPUT BOX
+========================= */
+
+.contact form .inputBox{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact form .inputBox input{
+    width: 100%;
+}
+
+/* =========================
+   INPUT & TEXTAREA
+========================= */
+
+.contact form input,
+.contact form textarea{
+    width: 100%;
+
+    padding: 1.3rem 1.5rem;
+
+    border: .1rem solid var(--border);
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+    color: var(--dark);
+
+    background: #fafafa;
+}
+
+.contact form textarea{
+    resize: none;
+    min-height: 18rem;
+}
+
+/* =========================
+   FOCUS EFFECT
+========================= */
+
+.contact form input:focus,
+.contact form textarea:focus{
+    border-color: var(--pink);
+    background: var(--white);
+
+    box-shadow: 0 0 .8rem rgba(232, 67, 147, 0.2);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.contact form .btn{
+    display: inline-block;
+
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+
+    background: var(--pink);
+    color: var(--white);
+
+    border-radius: 5rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.contact form .btn:hover{
+    background: var(--dark);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact .contact-info{
+    flex: 1 1 35rem;
+
+    background: var(--white);
+
+    padding: 3rem;
+    border-radius: 1.5rem;
+
+    box-shadow: var(--shadow);
+}
+
+.contact .contact-info h3{
+    font-size: 2.8rem;
+    color: var(--dark);
+
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* =========================
+   INFO ITEM
+========================= */
+
+.contact .contact-info .info{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+.contact .contact-info .info i{
+    width: 5rem;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(232, 67, 147, 0.1);
+
+    border-radius: 50%;
+
+    font-size: 2rem;
+    color: var(--pink);
+}
+
+.contact .contact-info .info p{
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.contact form:hover,
+.contact .contact-info:hover{
+    transform: translateY(-5px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px){
+
+    .contact{
+        padding: 6rem 5%;
+    }
+
+    .contact .heading{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    .contact .row{
+        flex-direction: column;
+    }
+
+    .contact form .inputBox{
+        flex-direction: column;
+    }
+
+    .contact form,
+    .contact .contact-info{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+
+    .contact{
+        padding: 5rem 2rem;
+    }
+
+    .contact .heading{
+        font-size: 3rem;
+    }
+
+    .contact form,
+    .contact .contact-info{
+        padding: 2rem;
+    }
+
+    .contact form h3,
+    .contact .contact-info h3{
+        font-size: 2.3rem;
+    }
+}

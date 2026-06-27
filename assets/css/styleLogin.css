@@ -1,0 +1,279 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* =========================
+   RESET
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: url("../images/loginbg.jpg") no-repeat center center/cover;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blur background */
+body::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("../images/loginbg.jpg") no-repeat center center/cover;
+
+    filter: blur(8px);
+    transform: scale(1.1);
+
+    z-index: -1;
+}
+
+/* =========================
+   LOGIN / SIGNUP BOX
+========================= */
+.signup{
+    width: 90%;
+    max-width: 420px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,0.1);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.2);
+
+    animation: fadeIn 0.8s ease;
+}
+
+/* =========================
+   FORM
+========================= */
+.signup form{
+    width: 100%;
+
+    padding: 45px 40px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================
+   TITLE
+========================= */
+.signup h1{
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 2.8rem;
+    font-weight: 600;
+
+    margin-bottom: 35px;
+
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   LABEL
+========================= */
+.signup label{
+    color: #fff;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+/* =========================
+   INPUT
+========================= */
+.signup input{
+    width: 100%;
+
+    height: 48px;
+
+    margin-bottom: 20px;
+
+    padding: 0 18px;
+
+    border: 2px solid transparent;
+    border-radius: 30px;
+
+    background: rgba(255,255,255,0.18);
+
+    color: #fff;
+
+    font-size: 1.4rem;
+
+    transition: 0.3s ease;
+}
+
+/* Placeholder */
+.signup input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+/* Focus */
+.signup input:focus{
+    border-color: #e84393;
+
+    background: rgba(255,255,255,0.28);
+
+    outline: none;
+}
+
+/* Hover */
+.signup input:hover{
+    background: rgba(255,255,255,0.24);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.signup button{
+    width: 100%;
+
+    height: 48px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #e84393;
+
+    color: #fff;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+.signup button:hover{
+    background: #d6307a;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(232,67,147,0.4);
+}
+
+/* Button active */
+.signup button:active{
+    transform: scale(0.97);
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+.error{
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #ffd6e7;
+
+    font-size: 1.3rem;
+
+    font-weight: 500;
+}
+
+/* =========================
+   SUCCESS MESSAGE
+========================= */
+.success{
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: #b8ffcc;
+
+    font-size: 1.3rem;
+
+    font-weight: 500;
+}
+
+/* =========================
+   SIGNUP / LOGIN LINK
+========================= */
+.signup-link{
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 1.3rem;
+
+    transition: 0.3s ease;
+}
+
+.signup-link:hover{
+    color: #ffd6ec;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 500px){
+
+    .signup form{
+        padding: 35px 25px;
+    }
+
+    .signup h1{
+        font-size: 2.2rem;
+    }
+
+    .signup input{
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    .signup button{
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
