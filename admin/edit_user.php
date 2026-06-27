@@ -87,7 +87,7 @@ exit();
 
 <!-- Background -->
 <div class="fixed inset-0 -z-20 overflow-hidden">
-    <img src="../images/loginbg.jpg"
+    <img src="../assets/images/loginbg.jpg"
          class="w-full h-full object-cover blur-lg scale-110">
 </div>
 

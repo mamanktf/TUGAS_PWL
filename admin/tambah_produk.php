@@ -14,7 +14,7 @@ if(isset($_POST['simpan'])){
 
     move_uploaded_file(
         $tmp,
-        "../images/" . $image
+        "../assets/images/" . $image
     );
 
     $stmt = $pdo->prepare("
@@ -55,7 +55,7 @@ if(isset($_POST['simpan'])){
 <div class="fixed inset-0 -z-20 overflow-hidden">
 
     <img
-        src="../images/loginbg.jpg"
+        src="../assets/images/loginbg.jpg"
         class="w-full h-full object-cover scale-110 blur-lg"
         alt="">
 
