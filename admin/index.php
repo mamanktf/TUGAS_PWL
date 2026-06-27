@@ -28,7 +28,7 @@ $totalPendapatan = $pdo->query("
 <!-- Background -->
 <div class="fixed inset-0 -z-20 overflow-hidden">
     <img
-        src="../images/loginbg.jpg"
+        src="../assets/images/loginbg.jpg"
         alt="Background"
         class="w-full h-full object-cover scale-110 blur-lg">
 </div>

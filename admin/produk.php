@@ -21,7 +21,7 @@ $products = $stmt->fetchAll();
 <!-- Background -->
 <div class="fixed inset-0 -z-20 overflow-hidden">
     <img
-        src="../images/loginbg.jpg"
+        src="../assets/images/loginbg.jpg"
         class="w-full h-full object-cover scale-110 blur-lg"
         alt="">
 </div>
@@ -104,7 +104,7 @@ $products = $stmt->fetchAll();
                     <td class="p-4">
 
                         <img
-                            src="../images/<?= htmlspecialchars($p['image']); ?>"
+                            src="../assets/images/<?= htmlspecialchars($p['image']); ?>"
                             class="w-20 h-20 object-cover rounded-xl mx-auto">
 
                     </td>
