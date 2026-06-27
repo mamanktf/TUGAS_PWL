@@ -45,6 +45,28 @@ body::before{
 /* =========================
    LOGIN / SIGNUP BOX
 ========================= */
+
+.password-box{
+    position: relative;
+}
+
+.password-box input{
+    width: 100%;
+}
+
+.password-box i{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 18px;
+}
+
+.password-box i:hover{
+    color: #e91e63;
+}
 .signup{
     width: 90%;
     max-width: 420px;

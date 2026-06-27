@@ -118,13 +118,20 @@ if (isset($_POST['login'])) {
             <!-- PASSWORD -->
             <label>Password</label>
 
-            <input
-                type="password"
-                name="password"
-                placeholder="Masukkan password"
-                required
-                autocomplete="current-password"
-            >
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Masukkan password"
+                    required
+                    autocomplete="current-password"
+                >
+
+                <i class="fa-solid fa-eye" id="togglePassword"></i>
+
+            </div>
 
             <!-- BUTTON -->
             <button type="submit" name="login">
@@ -154,6 +161,27 @@ if (isset($_POST['login'])) {
         </form>
 
     </div>
+<script>
 
+const password = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+
+togglePassword.addEventListener("click", () => {
+
+    if(password.type === "password"){
+
+        password.type = "text";
+        togglePassword.classList.replace("fa-eye","fa-eye-slash");
+
+    }else{
+
+        password.type = "password";
+        togglePassword.classList.replace("fa-eye-slash","fa-eye");
+
+    }
+
+});
+
+</script>
 </body>
 </html>
