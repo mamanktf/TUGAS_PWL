@@ -4,10 +4,10 @@
    DATABASE CONFIG
 ========================= */
 
-$host       = "localhost";
-$dbname     = "flowershop";
-$dbusername = "root";
-$dbpassword = "";
+$host = "sql203.infinityfree.com";
+$dbname = "if0_42281450_flowershop";
+$dbusername = "if0_42281450";
+$dbpassword = "password_database";
 
 /* =========================
    DSN CONNECTION
